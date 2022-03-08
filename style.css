@@ -49,6 +49,12 @@
         background-color: black !important;
     }
 
+    .dropdown-item:focus, .dropdown-item:hover {
+        color: #FFFFFF;
+        text-decoration: none;
+        background-color: #16181b !important;
+    }
+
     ul li{
         float: left;
         width: 100px;
@@ -88,13 +94,10 @@
     #lead a{
         top: 85vh ;
     }
-<<<<<<< HEAD
-=======
 
     #lead >a img{
         width: 200px;
     }
->>>>>>> 26e16e3e29f08e6e42dd275678b69fe6d03a63d9
    
     #banner_heading{
         position: absolute;
