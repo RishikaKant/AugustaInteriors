@@ -260,13 +260,15 @@
     }
 
     .brand_info{
-        padding: 30px 10px;
+        padding: 10px 0px;
     }
 
     .brand_info p{
-        /* margin: 30px 0; */
-        text-align: left;
-        font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
     }
     
     .brand_info i{
@@ -293,6 +295,13 @@
         padding-bottom: 15px;
     }
 
+    .footer__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 300px;
+    }
 
 
     /* FOOTER SECTION ENDS */
