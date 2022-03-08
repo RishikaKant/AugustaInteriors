@@ -180,7 +180,13 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 80vh;
+        height: fit-content;
+    }
+
+    @media screen and (max-width: 991px) {
+        #about_us_text {
+            padding: 3rem;
+        }
     }
 
     .about_us_heading{
@@ -201,6 +207,12 @@
 
     .about-us-img {
         padding: 40px 60px !important;
+    }
+
+    @media screen and (max-width: 991px) {
+        .about-us-img {
+            padding: 20px 0 !important;
+        }
     }
 
     #about-1{
