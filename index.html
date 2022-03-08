@@ -60,7 +60,7 @@
         </div>
         <div class="row" id="lead">
             <p>At Augusta we apply the science & the art of design to achieve your dream interior.</p>
-            <a href="/"><img style="z-index: 1; position: absolute;" src="assets/Contact Us.png" alt=""></a>
+            <a href="https://wa.me//+919871441968"><img style="z-index: 1; position: absolute;" src="assets/Contact Us.png" alt=""></a>
 
         </div>
     </div>
@@ -90,12 +90,16 @@
     <div class="container-fluid" id="about-2">
         <div class="row">
             <div class="col-12 col-md-6 pt-5" id="about_us_text">
-                <p class="about_us_heading">About Us</p>
-                <p class="about_us_p">The Augusta team includes members who are masters of the design, construction & project management fields for over 20 years.The team has built processes and methodologies that are designed to overcome the limitations of the unorganized industry that real estate is, in India.</p>
-                <p class="about_us_p">Our experience spans across designing school campuses, high end luxury residential interiors and corporate interiors.</p>
+                <p class="about_us_heading">Ruchi Gulati</p>
+                <p class="about_us_p">Started design practice in San Francisco, now a resident of Gurgaon.
+                  B. Arch from Dr. D.Y.  Patil College of Architecture, Mumbai.</p>
+                  <p class="about_us_p"> Experience includes schools and residential construction in California 
+                    Experience of Design & Build of custom houses in South Bay, California.</p>
+                <p class="about_us_p">Over the past 13 years in India, she has focused on Interior Architecture. She loves photography and painting.
+                  She has a love for colors, global materials, creativity in design. </p>
             </div>
             <div class="col-12 col-md-6">
-                <img class="img-fluid about-us-img" src="assets/AboutUs.svg" alt="" />
+                <img class="img-fluid about-us-img" src="assets/RuchiGulati.svg" alt="" />
             </div>
         </div>
     </div>
@@ -235,13 +239,21 @@
         var about2=document.getElementById("about-2");
         if(about2.style.display==="none"){
           about2.style.display="block";
+          about2.style.opacity="1";
+          about2.style.transition="2.5s ease-out";
+          about1.style.transition="2.5s ease-out";
+          about1.style.opacity="0";
           about1.style.display="none";
         }
         else{
           about2.style.display="none";
+          about1.style.opacity="1";
+          about1.style.transition="2.5s ease-out";
+          about2.style.transition="2.5s ease-out"
+          about2.style.opacity="0";
           about1.style.display="block";
         }
-      },5000);
+      },2500);
     </script>
 
   </body>

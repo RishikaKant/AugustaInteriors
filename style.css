@@ -49,11 +49,7 @@
         background-color: black !important;
     }
 
-    .dropdown-item:focus, .dropdown-item:hover {
-        color: #FFFFFF;
-        text-decoration: none;
-        background-color: #16181b !important;
-    }
+
 
     ul li{
         float: left;
@@ -200,10 +196,24 @@
 
     #about-1{
         display: block;
+        animation: fade1 2.5s infinite;
+        transition: opacity 2.5s ease-out;
     }
 
     #about-2{
         display: none;
+        animation: fade2 2.5s infinite;
+        transition: opacity 2.5s ease-in-out;
+    }
+
+    @keyframes fade1 {
+        0%{opacity: 1;}
+        100%{opacity: 0;}
+    }
+
+    @keyframes fade2 {
+        0%{opacity: 0;}
+        100%{opacity: 1;}
     }
 
     /* ABOUT US SECTION ENDS */
