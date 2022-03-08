@@ -1,3 +1,7 @@
+    * {
+        font-family: Raleway;
+    }
+
     body{
         overflow-x: hidden;
         font-family: Raleway !important;
@@ -102,7 +106,7 @@
     .banner1, .banner2, .banner3{
         display:block;
         position: absolute;
-        height: 700px;
+        height: 100vh;
         width: 100%;
         object-fit: cover;
     }
@@ -145,9 +149,18 @@
 
     /* ABOUT US SECTION STARTS */
 
+    .img-fluid {
+        width: 100% !important;
+        height: 100vh !important;
+        object-fit: cover;
+    }
+
     #about_us_text{
-        padding-right: 5rem;
-        padding-left: 5rem;
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80vh;
     }
 
     .about_us_heading{
@@ -164,6 +177,10 @@
         font-style: normal;
         line-height: 42px;
         text-align: justify;
+    }
+
+    .about-us-img {
+        padding: 40px 60px !important;
     }
 
     /* ABOUT US SECTION ENDS */
@@ -209,13 +226,11 @@
 
     .zoom{
         height: 450px;
-        width: 350px;
         overflow: hidden;
    }
 
     .zoom img{
         transition: transform .2s ease-in;
-        height: 100%;
         width: 100%;
     }
 
@@ -225,6 +240,10 @@
 
     .arrow{
         padding-left: 4px;
+    }
+
+    .projects__row {
+        padding: 40px;
     }
     
     /* PROJECT SECTION ENDS */
