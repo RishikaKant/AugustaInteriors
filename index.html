@@ -104,7 +104,7 @@
 
 
     <!--ABOUT US SECTION STARTS-->
-    <div class="container-fluid">
+    <div class="container-fluid" id="about-1">
         <div class="row">
             <div class="col-12 col-md-6">
                 <img class="img-fluid about-us-img" src="assets/AboutUs.svg" alt="" />
@@ -121,7 +121,7 @@
     <!--ABOUT US SECTION ENDS-->
 
     <!--ABOUT US SECTION STARTS-->
-    <div class="container-fluid">
+    <div class="container-fluid" id="about-2">
         <div class="row">
             <div class="col-12 col-md-6 pt-5" id="about_us_text">
                 <p class="about_us_heading">About Us</p>
@@ -263,6 +263,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <script>
+      setInterval(function(){
+        var about1=document.getElementById("about-1");
+        var about2=document.getElementById("about-2");
+        if(about2.style.display==="none"){
+          about2.style.display="block";
+          about1.style.display="none";
+        }
+        else{
+          about2.style.display="none";
+          about1.style.display="block";
+        }
+      },5000);
+    </script>
 
   </body>
 </html>
