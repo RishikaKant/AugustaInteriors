@@ -70,7 +70,14 @@
         position: absolute;
         top: 70vh;
         left: 50px;
-        /* padding: 0 80px; */
+    }
+
+    @media screen and (max-width: 991px) {
+        #lead {
+            font-size: 20px;
+            left: 20px;
+            width: 80vw;
+        }
     }
 
     #lead p{
@@ -81,6 +88,13 @@
     #lead a{
         top: 85vh ;
     }
+<<<<<<< HEAD
+=======
+
+    #lead >a img{
+        width: 200px;
+    }
+>>>>>>> 26e16e3e29f08e6e42dd275678b69fe6d03a63d9
    
     #banner_heading{
         position: absolute;
@@ -93,7 +107,7 @@
         display:block;
         position: absolute;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         object-fit: cover;
     }
 
@@ -146,7 +160,13 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 80vh;
+        height: fit-content;
+    }
+
+    @media screen and (max-width: 991px) {
+        #about_us_text {
+            padding: 3rem;
+        }
     }
 
     .about_us_heading{
@@ -167,6 +187,12 @@
 
     .about-us-img {
         padding: 40px 60px !important;
+    }
+
+    @media screen and (max-width: 991px) {
+        .about-us-img {
+            padding: 80px 20px !important;
+        }
     }
 
     #about-1{
@@ -219,7 +245,6 @@
     }
 
     .zoom{
-        height: 450px;
         overflow: hidden;
    }
 
@@ -295,6 +320,17 @@
         align-items: center;
         justify-content: center;
         gap: 200px;
+    }
+
+    @media screen and (max-width: 991px) {
+        .footer__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 0px;
+            padding: 40px;
+        }
     }
 
 
