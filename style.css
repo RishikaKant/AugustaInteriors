@@ -16,7 +16,7 @@
         overflow: hidden;
     }
     
-    ul{
+    /* ul{
         padding: 0%;
         margin: 0%;
         list-style: none;
@@ -59,7 +59,7 @@
 
     ul li:hover ul li{
         display: block;
-    }
+    } */
 
     #items{
         z-index: 1;
@@ -77,6 +77,18 @@
         color: #FFD700;
     }
 
+    ul li{
+        float: left;
+        width: 100px;
+        height: 40px;
+        opacity: 0.9;
+        line-height: 40px;
+        text-align: center;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+
     .ditem .dropdown-menu{
         background-color: #001828;
         font-size: 10px;
@@ -87,13 +99,27 @@
     }
 
     #lead{
-        margin-top: 400px;
-        margin-left: 50px;
-        margin-right: 50px;
         font-size: 30px;
         display: flex;
         flex-direction: column;
+        position: absolute;
+        top: 70vh;
+        left: 50px;
         /* padding: 0 80px; */
+    }
+
+    #lead p{
+        top:75vh ;
+        color: #FFFFFF ;
+        z-index: 1 ;
+    }
+
+    #lead a{
+        top: 85vh ;
+    }
+
+    #lead>a img{
+
     }
    
     #banner_heading{
@@ -296,3 +322,34 @@
 
 
     /* FOOTER SECTION ENDS */
+
+    /* PROJECTS PAGE */
+
+    #r_navbar{
+        z-index: 1;
+        padding: 50px 50px;
+        display: flex;
+        justify-content: space-between;
+     }
+    
+    .container{
+        width: 100vw;
+        background-size: cover;
+        padding: 0%;
+        margin: 0;
+    }
+    
+    .project_name{
+        font-family: Raleway;
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0 0 0 0;
+    }
+
+    .r_line{
+        background-color: #FFD700;
+        width: 345px;
+        margin-top: 0%;
+    }
+    
+
