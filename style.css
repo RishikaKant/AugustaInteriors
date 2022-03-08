@@ -183,6 +183,14 @@
         padding: 40px 60px !important;
     }
 
+    #about-1{
+        display: block;
+    }
+
+    #about-2{
+        display: none;
+    }
+
     /* ABOUT US SECTION ENDS */
 
 
