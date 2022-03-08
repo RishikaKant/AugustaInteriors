@@ -1,5 +1,6 @@
     body{
         overflow-x: hidden;
+        font-family: Raleway !important;
     }
     
     /* BANNER SECTION STARTS */
@@ -7,6 +8,53 @@
     #navbar{
         z-index: 1;
         padding: 50px 50px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    ul{
+        padding: 0%;
+        margin: 0%;
+        list-style: none;
+    }
+
+    ul li{
+        float: left;
+        width: 100px;
+        height: 40px;
+        opacity: 0.9;
+        line-height: 40px;
+        text-align: center;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    ul li a{
+        text-decoration: none;
+        display: block;
+    }
+
+    ul li ul{
+        background-color: black;
+        text-align: center;
+        align-items: center;
+        border-radius: 4px;
+    }
+
+    ul li ul li{
+        display: none;
+        background-color: #001828;
+        line-height:40px;
+        font-size: 10px;
+        height: 40px;
+        width: 200px;
+    }
+
+    
+
+    ul li:hover ul li{
+        display: block;
     }
 
     #items{
@@ -17,14 +65,30 @@
 
     #items a{
         color: #FFFFFF;
-        padding: 0 20px;
         font-size: 18px;
+        text-decoration: none;
+    }
+
+    #items a:hover{
+        color: #FFD700;
+    }
+
+    .ditem .dropdown-menu{
+        background-color: #001828;
+        font-size: 10px;
+    }
+
+    .ditem .dropdown-menu a{
+        font-size: 10px;
     }
 
     #lead{
         margin-top: 400px;
         margin-left: 50px;
         margin-right: 50px;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
         /* padding: 0 80px; */
     }
    
@@ -39,20 +103,20 @@
         display:block;
         position: absolute;
         height: 700px;
-        width: 1263.33px;
+        width: 100%;
         object-fit: cover;
     }
 
     .banner1{
-        animation: fade1 10s infinite;
+        animation: fade1 20s infinite;
     }
 
     .banner2{
-        animation: fade2 10s infinite;
+        animation: fade2 20s infinite;
     }
 
     .banner3{
-        animation: fade3 10s infinite;
+        animation: fade3 20s infinite;
     }
 
     @keyframes fade1{

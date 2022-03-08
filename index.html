@@ -18,28 +18,83 @@
 
   </head>
   <body>
-
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand"  href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav> -->
     <!--BANNER SECTION STARTS-->
     <div class="container-fluid" style="height:800px; width: 100%; margin: 0%; padding: 0;">
-        <nav class="navbar navbar-expand-sm" style="position: absolute; display: flex; justify-content: space-between; width: 100%; color: white;" id="navbar">
-            <a href="/" class="navbar-brand font-weight-bold" style="color: #FFFFFF; font-family: Roboto; font-size: 36px;">AUGUSTA INTERIORS</a>
+        <nav class="navbar navbar-expand-sm"  style="position: absolute; display: flex; justify-content: space-between; width: 100%; color: white;" id="navbar">
+            <a href="/" class="navbar-brand font-weight-bold" style="color: #FFFFFF; font-family: 'Roboto' !important; font-size: 36px;">AUGUSTA INTERIORS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             <div id="items">
-                <a href="/">Projects</a>
-                <a href="/">Services</a>
-                <a href="/">About Us</a>
-                <a href="/">Contact</a>
+                <ul class="navbar-nav mr-auto">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Projects
+                            </a>
+                            <div class="ditem">
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                                    <a class="dropdown-item" href="#">Residential Projects</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Commercial Projects</a>
+                                  </div>
+                            </div>
+                          </li>
+                    </div>
+                    <li class="nav-item"><a href="/">Services</a></li>
+                    <li class="nav-item"><a href="/">About Us</a></li>
+                    <li class="nav-item"><a href="/">Contact</a></li>
+                </ul>               
             </div>
         </nav>
+
+        
         <div class="row">
-            <div class="col-12" style="z-index: 0;">
+            <div class="col-12 col-md-12" style="z-index: 0;">
                 <img class="banner1" src="assets/Banner1.svg" alt="">
                 <img class="banner2" src="assets/Banner2.svg" alt="">
                 <img class="banner3" src="assets/Banner3.svg" alt="">      
             </div>
         </div>
         <div class="row" id="lead">
-            <p style="z-index: 1; font-size: 36px; font-weight: 400; top: 20%; color: #FFFFFF;">At Augusta we apply the science & the art of design to achieve your dream interior.</p>
-            <a href="/"><img style="z-index: 1; position: absolute;" src="assets/Contact Us.svg" alt=""></a>
+            <p style="z-index: 1; font-weight: 400; top: 20%; color: #FFFFFF;">At Augusta we apply the science & the art of design to achieve your dream interior.</p>
+            <br/>
+            <a href="/"><img style="z-index: 1; position: absolute;" src="assets/Contact Us.png" alt=""></a>
 
         </div>
     </div>
@@ -72,7 +127,7 @@
           Presence
         </div>
         <hr class="presence_line"/>
-        <div class="row my-3 pt-3 pb-5 mx-5">
+        <div class="row my-3 pt-3 pb-5 mx-5 align-items-center">
             <div class="col-12 col-md-4 my-2">
                 <div class="card">
                     <p class="card_title">20+</p>
@@ -186,6 +241,12 @@
     </footer>
 
     <!--FOOTER SECTION ENDS-->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
   </body>
 </html>
