@@ -33,7 +33,7 @@
     }
 
     .navbar a{
-        font-weight: 500;
+        font-weight: 500 ;
     }
 
     .navbar-nav li a {
@@ -99,6 +99,8 @@
 
     #lead >a img{
         width: 200px;
+        z-index: 1;
+        position: absolute;
     }
    
     #banner_heading{
@@ -251,22 +253,22 @@
 
     #about-1{
         display: block;
-        animation: fade1 5s infinite;
+        animation: fadee1 5s infinite;
         transition: opacity 5s ease-out;
     }
 
     #about-2{
         display: none;
-        animation: fade2 5s infinite;
+        animation: fadee2 5s infinite;
         transition: opacity 5s ease-in-out;
     }
 
-    @keyframes fade1 {
+    @keyframes fadee1 {
         0%{opacity: 1;}
         100%{opacity: 0;}
     }
 
-    @keyframes fade2 {
+    @keyframes fadee2 {
         0%{opacity: 0;}
         100%{opacity: 1;}
     }
@@ -310,6 +312,14 @@
     .project_line{
         background-color:#FFD700;
         width: 80px;
+    }
+
+    .projectname{
+        font-weight: bold;
+    }
+
+    .view{
+        color: #E1A816;
     }
 
     .zoom{
@@ -406,11 +416,15 @@
 
     /* PROJECTS PAGE */
 
+    #r_project{
+        height: 330px;
+        background-image: url(assets/Facade\ Design.png);
+        background-size: cover;
+    }
+
     #r_navbar{
-        z-index: 1;
-        padding: 50px 50px;
-        display: flex;
-        justify-content: space-between;
+        background-color: transparent !important; 
+        position: absolute !important;
      }
     
     .container{
