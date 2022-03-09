@@ -6,6 +6,16 @@
         overflow-x: hidden;
         font-family: Raleway !important;
     }
+
+    @font-face {
+        font-family: Raleway;
+        src: url(assets/Raleway/);
+    }
+
+    @font-face {
+        font-family: Roboto;
+        src: url(assets/Roboto/);
+    }
     
     /* BANNER SECTION STARTS */
 
