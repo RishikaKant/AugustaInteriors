@@ -1,5 +1,6 @@
+@import url(//fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900);
     * {
-        font-family: Raleway;
+        font-family: 'Raleway';
     }
 
     body{
@@ -36,7 +37,7 @@
     }
 
     .navbar a{
-        font-weight: 500;
+        font-weight: 500 ;
     }
 
     .navbar-nav li a {
@@ -102,6 +103,8 @@
 
     #lead >a img{
         width: 200px;
+        z-index: 1;
+        position: absolute;
     }
    
     #banner_heading{
@@ -341,6 +344,14 @@
         width: 80px;
     }
 
+    .projectname{
+        font-weight: bold;
+    }
+
+    .view{
+        color: #E1A816;
+    }
+
     .zoom{
         overflow: hidden;
    }
@@ -435,11 +446,15 @@
 
     /* PROJECTS PAGE */
 
+    #r_project{
+        height: 330px;
+        background-image: url(assets/Facade\ Design.png);
+        background-size: cover;
+    }
+
     #r_navbar{
-        z-index: 1;
-        padding: 50px 50px;
-        display: flex;
-        justify-content: space-between;
+        background-color: transparent !important; 
+        position: absolute !important;
      }
     
     .container{
