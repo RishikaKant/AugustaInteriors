@@ -101,7 +101,7 @@
     @media screen and (max-width: 991px) {
         #lead {
             font-size: 20px;
-            left: 20px;
+            left: 50px;
             width: 80vw;
         }
     }
@@ -256,6 +256,7 @@
     @media screen and (max-width: 991px) {
         .about-us-img {
             padding: 80px 20px !important;
+            height: 1077px !important;
         }
     }
 
@@ -321,6 +322,14 @@
 
 
     /* PRESENCE SECTION STARTS */
+
+    @media screen and (max-width: 991px) {
+        #presence {
+            margin-top: 6rem !important;
+        }
+    }
+
+
     #presence_heading{
         font-size: 30px;
         padding: 45px 0 0 0;
